@@ -13,19 +13,6 @@ const clientSideEmotionCache = createEmotionCache();
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
-  // const [mode, setMode] = React.useState('dark');
-  // const colorMode = React.useMemo(
-  //   () => ({
-  //     // The dark mode switch would invoke this method
-  //     toggleColorMode: () => {
-  //       setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'));
-  //     },
-  //   }),
-  //   []
-  // );
-
-  // const theme = React.useMemo(() => createTheme(getThemeTokens(mode)), [mode]);
-
   return (
     <CacheProvider value={emotionCache}>
       <Head>
