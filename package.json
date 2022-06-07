@@ -16,7 +16,7 @@
     "@emotion/styled": "latest",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
-    "next": "latest",
+    "next": "canary",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest"
