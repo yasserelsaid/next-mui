@@ -1,7 +1,8 @@
-import { createContext } from 'react';
+// import { createContext } from 'react';
 import { red } from '@mui/material/colors';
+import { createTheme } from '@mui/material/styles';
 
-export const lightTheme = {
+const lightTheme = {
   palette: {
     primary: {
       main: '#027FFF',
@@ -74,10 +75,13 @@ const darkTheme = {
   },
 };
 
-const getThemeTokens = (mode) =>
-  mode == 'light' ? { ...lightTheme } : { ...darkTheme };
+// const getThemeTokens = (mode) =>
+//   mode == 'light' ? { ...lightTheme } : { ...darkTheme };
 
-export const ColorModeContext = createContext({
-  toggleColorMode: () => {},
-});
-export default getThemeTokens;
+// export const ColorModeContext = createContext({
+//   toggleColorMode: () => {},
+// });
+
+const theme = createTheme(lightTheme);
+
+export default theme;
