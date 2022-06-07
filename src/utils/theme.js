@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 import { red } from '@mui/material/colors';
 
-const lightTheme = {
+export const lightTheme = {
   palette: {
     primary: {
       main: '#027FFF',
